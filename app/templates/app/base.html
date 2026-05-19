@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Django Site{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'app/style.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="{% url 'home' %}">Головна</a> |
+        <a href="{% url 'about' %}">Про нас</a> |
+        <a href="{% url 'contacts' %}">Контакти</a> |
+        <a href="{% url 'products' %}">Товари</a> |
+        <a href="{% url 'students' %}">Студенти</a> |
+        <a href="{% url 'profile' %}">Профіль</a> |
+        <a href="{% url 'sales' %}">Продажі</a>
+    </nav>
+    {% block content %}{% endblock %}
+</body>
+</html>
