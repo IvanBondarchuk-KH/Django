@@ -8,15 +8,22 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <a href="{% url 'home' %}">Головна</a> |
-        <a href="{% url 'about' %}">Про нас</a> |
-        <a href="{% url 'contacts' %}">Контакти</a> |
-        <a href="{% url 'products' %}">Товари</a> |
-        <a href="{% url 'students' %}">Студенти</a> |
-        <a href="{% url 'profile' %}">Профіль</a> |
-        <a href="{% url 'sales' %}">Продажі</a>
-    </nav>
+    <aside>
+        <a href="{% url 'index' %}">Головна</a>
+        <a href="{% url 'about' %}">Про бібліотеку</a>
+        <a href="{% url 'stats' %}">Статистика</a>
+        <a href="{% url 'catalog' %}">Каталог</a>
+        <a href="{% url 'news' %}">Новини</a>
+        <a href="{% url 'schedule' %}">Розклад</a>
+        <a href="{% url 'reviews' %}">Відгуки</a>
+        <a href="{% url 'ebooks' %}">Електронні ресурси</a>
+        <a href="{% url 'team' %}">Команда</a>
+        <a href="{% url 'faq' %}">FAQ</a>
+        <a href="{% url 'partners' %}">Партнери</a>
+        <a href="{% url 'kids' %}">Дітям</a>
+        <a href="{% url 'cooperation' %}">Співпраця</a>
+        <a href="{% url 'contacts' %}">Контакти</a>
+    </aside>
     {% block content %}{% endblock %}
 </body>
 </html>

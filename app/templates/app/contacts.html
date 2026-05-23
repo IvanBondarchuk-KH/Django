@@ -1,6 +1,12 @@
 {% extends 'app/base.html' %}
+{% load static %}
 {% block title %}Контакти{% endblock %}
 {% block content %}
 <h1>Контакти</h1>
-<p>Зв'яжіться з нами: email@example.com</p>
+<p>
+    м. Івано-Франківськ<br>
+    +380 XX XXX XX XX<br>
+    library@gmail.com
+</p>
+<img src="{% static 'app/images/map.png' %}" alt="Карта" style="max-width: 400px; width: 90%; display: block; margin: 32px auto; border-radius: 18px; box-shadow: 0 4px 24px #647dee88;">
 {% endblock %}

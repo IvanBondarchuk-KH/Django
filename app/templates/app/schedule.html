@@ -1,0 +1,12 @@
+{% extends 'app/base.html' %}
+{% block title %}Розклад роботи{% endblock %}
+{% block content %}
+<h1>Розклад роботи</h1>
+<table>
+    <tr><th>День</th><th>Години роботи</th></tr>
+    <tr><td>Понеділок - П’ятниця</td><td>09:00 – 19:00</td></tr>
+    <tr><td>Субота</td><td>10:00 – 16:00</td></tr>
+    <tr><td>Неділя</td><td>Вихідний</td></tr>
+</table>
+<p>Святкові дні — за окремим графіком.</p>
+{% endblock %}

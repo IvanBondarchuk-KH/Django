@@ -1,6 +1,17 @@
 {% extends 'app/base.html' %}
-{% block title %}Про нас{% endblock %}
+{% load static %}
+{% block title %}Про бібліотеку{% endblock %}
 {% block content %}
-<h1>Про нас</h1>
-<p>Ми вивчаємо Django!</p>
+<h1>Про бібліотеку</h1>
+<p>
+    Міська бібліотека заснована у 1950 році. За цей час вона стала культурним і освітнім центром міста.<br>
+    Ми пишаємося своєю історією та прагнемо до інновацій.
+</p>
+<ul>
+    <li>Читальна зала</li>
+    <li>Електронні книги</li>
+    <li>Wi-Fi</li>
+    <li>Комп’ютерний зал</li>
+</ul>
+<img src="{% static 'app/images/library.png' %}" alt="Читальна зала" style="max-width: 400px; width: 90%; display: block; margin: 32px auto; border-radius: 18px; box-shadow: 0 4px 24px #647dee88;">
 {% endblock %}

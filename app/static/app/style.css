@@ -8,30 +8,31 @@ body {
     overflow-x: hidden;
 }
 
-nav {
-    background: linear-gradient(90deg, #3a1c71 0%, #d76d77 50%, #ffaf7b 100%);
-    padding: 28px 60px;
-    box-shadow: 0 8px 32px 0 rgba(58,28,113,0.25), 0 1.5px 0 #fff3;
-    border-bottom: 3px solid #7f53ac;
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 220px;
+    background: linear-gradient(180deg, #3a1c71 0%, #d76d77 50%, #ffaf7b 100%);
+    box-shadow: 4px 0 32px 0 rgba(58,28,113,0.18);
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.22em;
-    letter-spacing: 1.5px;
-    border-radius: 0 0 32px 32px;
-    position: relative;
-    z-index: 2;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 48px;
+    z-index: 10;
 }
 
-nav a {
-    margin: 0 28px;
+aside a {
+    display: block;
+    margin: 0 24px 24px 24px;
     text-decoration: none;
     color: #fff;
     font-weight: 700;
-    padding: 12px 28px;
-    border-radius: 30px;
+    padding: 16px 18px;
+    border-radius: 18px;
     background: linear-gradient(90deg, #232526 0%, #414345 100%);
-    box-shadow: 0 2px 16px #7f53ac55, 0 0px 0 #fff3;
+    box-shadow: 0 2px 16px #7f53ac55;
     border: 2px solid #7f53ac;
     transition: 
         background 0.25s,
@@ -40,20 +41,44 @@ nav a {
         border 0.25s,
         transform 0.15s;
     text-shadow: 0 2px 8px #7f53ac88, 0 1px 0 #fff3;
-    position: relative;
-    overflow: hidden;
-    display: flex;
     text-align: center;
-    justify-content: center;
-    align-items: center;
 }
 
-nav a:hover {
+aside a:hover {
     background: linear-gradient(90deg, #7f53ac 0%, #647dee 100%);
     color: #fff;
     border: 2px solid #fff;
     box-shadow: 0 6px 24px #7f53acbb, 0 2px 8px #23252688;
-    transform: scale(1.08) rotate(-2deg);
+    transform: scale(1.06);
+}
+
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 220px;
+    background: linear-gradient(180deg, #3a1c71 0%, #d76d77 50%, #ffaf7b 100%);
+    box-shadow: 4px 0 32px 0 rgba(58,28,113,0.18);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 48px;
+    z-index: 10;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+aside::-webkit-scrollbar {
+    width: 8px;
+}
+aside::-webkit-scrollbar-thumb {
+    background: #7f53ac88;
+    border-radius: 6px;
+}
+
+body {
+    margin-left: 220px;
 }
 
 h1 {
@@ -151,6 +176,33 @@ hr {
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 2px 8px #7f53ac44;
+}
+
+main a, .content a, .page-content a, .ebooks-links a, .ebooks-section a, .ebooks-list a, ul li a {
+    color: #7f53ac;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 2px solid #7f53ac33;
+    transition: color 0.2s, border-bottom 0.2s;
+}
+
+main a:hover, .content a:hover, .page-content a:hover, .ebooks-links a:hover, .ebooks-section a:hover, .ebooks-list a:hover, ul li a:hover {
+    color: #ffd700;
+    border-bottom: 2px solid #ffd700;
+    text-shadow: 0 2px 8px #7f53ac88;
+}
+
+a {
+    color: #7f53ac;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 2px solid #7f53ac33;
+    transition: color 0.2s, border-bottom 0.2s;
+}
+a:hover {
+    color: #ffd700;
+    border-bottom: 2px solid #ffd700;
+    text-shadow: 0 2px 8px #7f53ac88;
 }
 
 @media (max-width: 900px) {
